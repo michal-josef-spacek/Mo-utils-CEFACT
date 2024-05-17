@@ -29,7 +29,7 @@ EXAMPLE1
      use Mo::utils::Cefact qw(check_cefact_unit);
 
      my $self = {
-             'key' => '8590786020177',
+             'key' => 'DLT',
      };
      check_cefact_unit($self, 'key');
 
