@@ -1,5 +1,5 @@
 NAME
-    Mo::utils::Cefact - Mo Cefact utilities.
+    Mo::utils::Cefact - Mo UN/CEFACT Common Code utilities.
 
 SYNOPSIS
      use Mo::utils::Cefact qw(check_cefact_unit);

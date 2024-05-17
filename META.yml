@@ -1,5 +1,5 @@
 ---
-abstract: 'Mo Cefact utilities.'
+abstract: 'Mo UN/CEFACT Common Code utilities.'
 author:
   - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:

@@ -43,7 +43,7 @@ __END__
 
 =head1 NAME
 
-Mo::utils::Cefact - Mo Cefact utilities.
+Mo::utils::Cefact - Mo UN/CEFACT Common Code utilities.
 
 =head1 SYNOPSIS
 
