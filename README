@@ -1,0 +1,86 @@
+NAME
+    Mo::utils::Cefact - Mo Cefact utilities.
+
+SYNOPSIS
+     use Mo::utils::Cefact qw(check_cefact_unit);
+
+     check_cefact_unit($self, $key);
+
+DESCRIPTION
+    Mo Cefact utilities for checking of data objects.
+
+SUBROUTINES
+  "check_cefact_unit"
+     check_cefact_unit($self, $key);
+
+    Check parameter defined by $key if it's UN/CEFACT Common Code. Value
+    could be undefined.
+
+    Returns undef.
+
+ERRORS
+     check_cefact_unit():
+             UN/CEFACT Common Code unit doesn't valid.
+
+EXAMPLE1
+     use strict;
+     use warnings;
+
+     use Mo::utils::Cefact qw(check_cefact_unit);
+
+     my $self = {
+             'key' => '8590786020177',
+     };
+     check_cefact_unit($self, 'key');
+
+     # Print out.
+     print "ok\n";
+
+     # Output:
+     # ok
+
+EXAMPLE2
+     use strict;
+     use warnings;
+
+     use Error::Pure;
+     use Mo::utils::Cefact qw(check_cefact_unit);
+
+     $Error::Pure::TYPE = 'Error';
+
+     my $self = {
+             'key' => 'xx',
+     };
+     check_cefact_unit($self, 'key');
+
+     # Print out.
+     print "ok\n";
+
+     # Output like:
+     # #Error [...utils.pm:?] UN/CEFACT Common Code unit doesn't valid.
+
+DEPENDENCIES
+    Error::Pure, Exporter, Readonly.
+
+SEE ALSO
+    Mo  Micro Objects. Mo is less.
+
+    Mo::utils
+        Mo utilities.
+
+REPOSITORY
+    <https://github.com/michal-josef-spacek/Mo-utils-Cefact>
+
+AUTHOR
+    Michal Josef Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+    © 2024 Michal Josef Špaček
+
+    BSD 2-Clause License
+
+VERSION
+    0.01
+
