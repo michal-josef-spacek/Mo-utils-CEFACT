@@ -2,9 +2,9 @@
 
 use strict;
 use warnings;
-
+n
 use Error::Pure;
-use Mo::utils::Cefact qw(check_cefact_unit);
+use Mo::utils::CEFACT qw(check_cefact_unit);
 
 $Error::Pure::TYPE = 'Error';
 
@@ -17,4 +17,4 @@ check_cefact_unit($self, 'key');
 print "ok\n";
 
 # Output like:
-# #Error [...utils.pm:?] UN/CEFACT Common Code unit doesn't valid.
+# #Error [...utils.pm:?] UN/CEFACT unit common code isn't valid.

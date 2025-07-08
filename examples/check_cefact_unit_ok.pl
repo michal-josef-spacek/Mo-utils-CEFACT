@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-use Mo::utils::Cefact qw(check_cefact_unit);
+use Mo::utils::CEFACT qw(check_cefact_unit);
 
 my $self = {
         'key' => 'DLT',

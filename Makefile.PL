@@ -18,6 +18,7 @@ name 'Mo-utils-CEFACT';
 perl_version 5.006002;
 readme_from 'CEFACT.pm';
 recursive_author_tests('xt');
+requires 'CEFACT::Unit' => 0;
 requires 'Error::Pure' => 0.15;
 requires 'Exporter' => 0;
 requires 'Readonly' => 0;

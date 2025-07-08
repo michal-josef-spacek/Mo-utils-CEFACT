@@ -13,14 +13,15 @@ SUBROUTINES
   "check_cefact_unit"
      check_cefact_unit($self, $key);
 
-    Check parameter defined by $key if it's UN/CEFACT Common Code. Value
-    could be undefined.
+    Check parameter defined by $key if it's UN/CEFACT unit Common Code.
+    Value could be undefined.
 
     Returns undef.
 
 ERRORS
      check_cefact_unit():
-             UN/CEFACT Common Code unit doesn't valid.
+             UN/CEFACT unit common code isn't valid.
+                   Value: %s
 
 EXAMPLE1
      use strict;
@@ -57,10 +58,10 @@ EXAMPLE2
      print "ok\n";
 
      # Output like:
-     # #Error [...utils.pm:?] UN/CEFACT Common Code unit doesn't valid.
+     # #Error [...utils.pm:?] UN/CEFACT unit common code isn't valid.
 
 DEPENDENCIES
-    Error::Pure, Exporter, Readonly.
+    CEFACT::Unit, Error::Pure, Exporter, Readonly.
 
 SEE ALSO
     Mo  Micro Objects. Mo is less.

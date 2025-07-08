@@ -4,6 +4,7 @@ use base qw(Exporter);
 use strict;
 use warnings;
 
+use CEFACT::Unit;
 use Error::Pure qw(err);
 use Readonly;
 
@@ -16,9 +17,11 @@ sub check_cefact_unit {
 
 	_check_key($self, $key) && return;
 
-#	if (! valid_barcode($self->{$key})) {
-#		err "UN/CEFACT Common Code unit doesn't valid.";
-#	}
+	if (! CEFACT::Unit->new->check_common_code($self->{$key})) {
+		err "UN/CEFACT unit common code isn't valid.",
+			'Value', $self->{$key},
+		;
+	}
 
 	return;
 }
@@ -61,7 +64,7 @@ Mo UN/CEFACT utilities for checking of data objects.
 
  check_cefact_unit($self, $key);
 
-Check parameter defined by C<$key> if it's UN/CEFACT Common Code.
+Check parameter defined by C<$key> if it's UN/CEFACT unit Common Code.
 Value could be undefined.
 
 Returns undef.
@@ -69,7 +72,8 @@ Returns undef.
 =head1 ERRORS
 
  check_cefact_unit():
-         UN/CEFACT Common Code unit doesn't valid.
+         UN/CEFACT unit common code isn't valid.
+               Value: %s
 
 =head1 EXAMPLE1
 
@@ -112,10 +116,11 @@ nn
  print "ok\n";
 
  # Output like:
- # #Error [...utils.pm:?] UN/CEFACT Common Code unit doesn't valid.
+ # #Error [...utils.pm:?] UN/CEFACT unit common code isn't valid.
 
 =head1 DEPENDENCIES
 
+L<CEFACT::Unit>,
 L<Error::Pure>,
 L<Exporter>,
 L<Readonly>.
