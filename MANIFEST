@@ -1,4 +1,4 @@
-Cefact.pm
+CEFACT.pm
 Changes
 examples/check_cefact_unit_fail.pl
 examples/check_cefact_unit_ok.pl
@@ -18,7 +18,7 @@ Makefile.PL
 MANIFEST			This list of files
 META.yml
 README
-t/Mo-utils-Cefact/01-use.t
-t/Mo-utils-Cefact/02-version.t
-xt/Mo-utils-Cefact/01-pod_coverage.t
-xt/Mo-utils-Cefact/02-pod.t
+t/Mo-utils-CEFACT/01-use.t
+t/Mo-utils-CEFACT/02-version.t
+xt/Mo-utils-CEFACT/01-pod_coverage.t
+xt/Mo-utils-CEFACT/02-pod.t

@@ -7,8 +7,8 @@ use Test::NoWarnings;
 BEGIN {
 
 	# Test.
-	use_ok('Mo::utils::Cefact');
+	use_ok('Mo::utils::CEFACT');
 }
 
 # Test.
-require_ok('Mo::utils::Cefact');
+require_ok('Mo::utils::CEFACT');

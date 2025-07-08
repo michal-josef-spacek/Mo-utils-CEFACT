@@ -1,4 +1,4 @@
-package Mo::utils::Cefact;
+package Mo::utils::CEFACT;
 
 use base qw(Exporter);
 use strict;
@@ -43,17 +43,17 @@ __END__
 
 =head1 NAME
 
-Mo::utils::Cefact - Mo UN/CEFACT Common Code utilities.
+Mo::utils::CEFACT - Mo UN/CEFACT Common Code utilities.
 
 =head1 SYNOPSIS
 
- use Mo::utils::Cefact qw(check_cefact_unit);
+ use Mo::utils::CEFACT qw(check_cefact_unit);
 
  check_cefact_unit($self, $key);
 
 =head1 DESCRIPTION
 
-Mo Cefact utilities for checking of data objects.
+Mo UN/CEFACT utilities for checking of data objects.
 
 =head1 SUBROUTINES
 
@@ -78,7 +78,7 @@ Returns undef.
  use strict;
  use warnings;
 
- use Mo::utils::Cefact qw(check_cefact_unit);
+ use Mo::utils::CEFACT qw(check_cefact_unit);
 
  my $self = {
          'key' => 'DLT',
@@ -97,9 +97,9 @@ Returns undef.
 
  use strict;
  use warnings;
-
+nn
  use Error::Pure;
- use Mo::utils::Cefact qw(check_cefact_unit);
+ use Mo::utils::CEFACT qw(check_cefact_unit);
 
  $Error::Pure::TYPE = 'Error';
 
@@ -136,7 +136,7 @@ Mo utilities.
 
 =head1 REPOSITORY
 
-L<https://github.com/michal-josef-spacek/Mo-utils-Cefact>
+L<https://github.com/michal-josef-spacek/Mo-utils-CEFACT>
 
 =head1 AUTHOR
 
