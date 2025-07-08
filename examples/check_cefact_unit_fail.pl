@@ -17,4 +17,4 @@ check_cefact_unit($self, 'key');
 print "ok\n";
 
 # Output like:
-# #Error [...utils.pm:?] UN/CEFACT unit common code isn't valid.
+# #Error [...CEFACT.pm:?] UN/CEFACT unit common code isn't valid.
