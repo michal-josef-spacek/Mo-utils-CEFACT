@@ -2,7 +2,7 @@
 
 use strict;
 use warnings;
-n
+
 use Error::Pure;
 use Mo::utils::CEFACT qw(check_cefact_unit);
 

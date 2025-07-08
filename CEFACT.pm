@@ -101,7 +101,7 @@ Returns undef.
 
  use strict;
  use warnings;
-nn
+
  use Error::Pure;
  use Mo::utils::CEFACT qw(check_cefact_unit);
 
