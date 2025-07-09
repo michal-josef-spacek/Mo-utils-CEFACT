@@ -20,7 +20,7 @@ SUBROUTINES
 
 ERRORS
      check_cefact_unit():
-             UN/CEFACT unit common code isn't valid.
+             Parameter '%s' must be a UN/CEFACT unit common code.
                    Value: %s
 
 EXAMPLE1
