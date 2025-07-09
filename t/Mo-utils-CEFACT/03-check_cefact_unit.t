@@ -21,6 +21,6 @@ $self = {
 eval {
 	check_cefact_unit($self, 'key');
 };
-is($EVAL_ERROR, "UN/CEFACT unit common code isn't valid.\n",
-	"UN/CEFACT unit common code isn't valid (XXX).");
+is($EVAL_ERROR, "Parameter 'key' must be a UN/CEFACT unit common code.\n",
+	"Parameter 'key' must be a UN/CEFACT unit common code. (XXX).");
 clean();

@@ -18,7 +18,7 @@ sub check_cefact_unit {
 	_check_key($self, $key) && return;
 
 	if (! CEFACT::Unit->new->check_common_code($self->{$key})) {
-		err "UN/CEFACT unit common code isn't valid.",
+		err "Parameter '$key' must be a UN/CEFACT unit common code.",
 			'Value', $self->{$key},
 		;
 	}
@@ -72,7 +72,7 @@ Returns undef.
 =head1 ERRORS
 
  check_cefact_unit():
-         UN/CEFACT unit common code isn't valid.
+         Parameter '%s' must be a UN/CEFACT unit common code.
                Value: %s
 
 =head1 EXAMPLE1
@@ -116,7 +116,7 @@ Returns undef.
  print "ok\n";
 
  # Output like:
- # #Error [...CEFACT.pm:?] UN/CEFACT unit common code isn't valid.
+ # #Error [...CEFACT.pm:?] Parameter '%s' must be a UN/CEFACT unit common code.
 
 =head1 DEPENDENCIES
 
