@@ -116,7 +116,7 @@ Returns undef.
  print "ok\n";
 
  # Output like:
- # #Error [...CEFACT.pm:?] Parameter '%s' must be a UN/CEFACT unit common code.
+ # #Error [...CEFACT.pm:?] Parameter 'key' must be a UN/CEFACT unit common code.
 
 =head1 DEPENDENCIES
 

@@ -58,7 +58,7 @@ EXAMPLE2
      print "ok\n";
 
      # Output like:
-     # #Error [...CEFACT.pm:?] UN/CEFACT unit common code isn't valid.
+     # #Error [...CEFACT.pm:?] Parameter 'key' must be a UN/CEFACT unit common code.
 
 DEPENDENCIES
     CEFACT::Unit, Error::Pure, Exporter, Readonly.
