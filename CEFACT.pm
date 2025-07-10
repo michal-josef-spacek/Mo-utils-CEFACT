@@ -67,6 +67,8 @@ Mo UN/CEFACT utilities for checking of data objects.
 Check parameter defined by C<$key> if it's UN/CEFACT unit Common Code.
 Value could be undefined.
 
+Put error if check isn't ok.
+
 Returns undef.
 
 =head1 ERRORS

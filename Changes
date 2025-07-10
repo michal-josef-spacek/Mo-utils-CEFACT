@@ -1,4 +1,5 @@
 0.03
+ - Add info about error to doc.
  - Add tests.
  - Fix output of example in doc.
  - Regen README file.
